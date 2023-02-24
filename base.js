@@ -26,4 +26,7 @@ console.log(a)
 a -= 2
 // tương đương a = a - 2
 // *=, /=, **= tương tự
-
+// toán tử chuỗi
+var firstName = ('Hieu')
+var lastName = ('duong')
+console.log(firstName + lastName)

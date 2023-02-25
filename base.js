@@ -1,4 +1,7 @@
-var a = 1
-var b = 2
-var isSuccess = a > b
-console.log(isSuccess)
+var a = 10
+var b = 5
+if (a > b) {
+    console.log('true')
+} else {
+    console.log('false')
+}

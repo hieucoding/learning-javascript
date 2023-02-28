@@ -1,9 +1,8 @@
-function writeLog() {
-    var myString = ''
-    for (var param of arguments) {
-        myString += `${param} - `
-    }
-    console.log(myString)
+function tru(a, b) {
+    return a - b
+    // nhung dong code ben duoi return se khong duoc hoat dong
+    console.log('duong trung hieu')
+    alert()
 }
-
-writeLog('duong', 'trung', 'hieu')
+var result = tru(2, 1)
+console.log(result)

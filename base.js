@@ -1,12 +1,9 @@
-for (var a = 0; a < 10; a++) {
-    console.log(a)
-    if (a >= 5) {
-        break
+function writeLog() {
+    var myString = ''
+    for (var param of arguments) {
+        myString += `${param} - `
     }
+    console.log(myString)
 }
-for (var a = 0; a < 10; a++){
-    if (a%2 !== 0) {
-        continue
-    }
-    console.log(a)
-}    
+
+writeLog('duong', 'trung', 'hieu')

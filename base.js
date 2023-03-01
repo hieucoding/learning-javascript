@@ -1,10 +1,9 @@
-var personId = {
-    name: 'duong trung hieu',
-    age: '19',
-    adress: 'hoang mai, hanoi'
+function user(firstName, lastName, avatar ) {
+    this.firstName = firstName
+    this.lastName = lastName
+    this.avatar = avatar
 }
 
-console.log(personId.adress)
-delete personId.name
-delete personId.age
-console.log(personId)
+var newUser = new user('hieu', 'duong', 'avatar')
+
+console.log(newUser)

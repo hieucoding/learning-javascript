@@ -1,8 +1,10 @@
-function tru(a, b) {
-    return a - b
-    // nhung dong code ben duoi return se khong duoc hoat dong
-    console.log('duong trung hieu')
-    alert()
+var personId = {
+    name: 'duong trung hieu',
+    age: '19',
+    adress: 'hoang mai, hanoi'
 }
-var result = tru(2, 1)
-console.log(result)
+
+console.log(personId.adress)
+delete personId.name
+delete personId.age
+console.log(personId)

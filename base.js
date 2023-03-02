@@ -1,6 +1,24 @@
-let age = 13;
-let check = age == 12 ? true : false; // ? dai dien cho su khang dinh dung hay sai 
-let check1 = age > 11 ? true : false;
-// check1 la true
-let check3 = age < 14 ? false : true;
-// check3 la true
+let a = 1;
+let c = ++a; // CV1: a = a + 1 ( a = 2); CV2: c = a (c = 2, a = 2)
+ c = a++; //  CV1: c = a ( c = 2, a = 2), CV:2 a = a + 1 ( a = 3)
+c = --a; // CV1: a = a -1 (a = 2); CV2: c = a ( c = 2, a = 2)
+// c = 1, a = 2
+// toan tu: = + - x / === == > < >= <+ ? && || ++ -- 
+for (let i = 1; i < 5; i++) {
+  a = a + 5;
+  c = c++;
+  // vong lap 1
+  // i = 1
+  // a = 
+  // c =
+  // vong lap 2
+  // i = 
+  // a =
+  // c =
+  console.log(i)
+  console.log(a)
+  console.log(c)
+}
+let d = ++a; 
+let e = --a;
+let f = a--;

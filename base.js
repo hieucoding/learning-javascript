@@ -1,14 +1,11 @@
-var date = 5
-switch (date) {
-  case 2:
-    console.log('hom nay la thu 2')
-    break 
-  case 5:
-    console.log('hom nay la thu 5')
-    break
-  case 8:
-    console.log('hom nya la chu nhat')
-    break
-  default:
-    console.log('khong biet')          
-}
+var myArray = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+  [7, 8]
+]
+for (var i = 0; i < myArray.length; i++) {
+    for (var j = 0; j < myArray[i].length; j++) {
+      console.log(myArray[i][j])
+    }  
+} 

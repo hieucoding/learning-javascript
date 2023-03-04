@@ -26,8 +26,12 @@ var personID =  [
   }
 ]
 
-function personFinder(person) {
-  console.log(person)
-}
+var i = 0
 
-var newPerson = personID.map(personFinder)
+function ageTotal (accumulator, currentValue, currentIndex, originalArray) {
+  i++
+  return accumulator + currentValue.age
+}
+var total = personID.reduce(ageTotal, 0)
+
+console.log(total)

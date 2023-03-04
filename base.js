@@ -26,26 +26,8 @@ var personID =  [
   }
 ]
 
-personID.forEach(function(person) {
+function personFinder(person) {
   console.log(person)
-})
+}
 
-var ageFind = personID.every(function(person) {
-  return person.age < 20
-})
-console.log(ageFind)
-
-var ageFind = personID.some(function(person) {
-  return person.age < 20
-})
-console.log(ageFind)
-
-var ageFind = personID.find(function(person) {
-  return person.name = "duong"
-})
-console.log(ageFind)
-
-var ageFind = personID.filter(function(person) {
-  return person.age < 20
-})
-console.log(ageFind)
+var newPerson = personID.map(personFinder)

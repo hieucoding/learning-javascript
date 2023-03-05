@@ -1,16 +1,21 @@
-// call back
+Array.prototype.map2 = function(callback) {
+    var output = [], arrayLenght = this.length
 
-// la ham function dc chuyen qua doi so
-// khi goi ham khac
-
-//1-la ham
-//2-duoc truyen qua doi so
-
-function myCallback (callback) {
-    console.log('callback: ', callback)
+    for (var i = 0; 1 < arrayLenght; ++i) {
+        var result = callback(this[i], i)
+        output.push(result)
+    }
+    return output
 }
-myCallback(1234)
 
-function newFunction(param) {
-    param(12345)
-}
+var names = [
+    'hoang',
+    'thanh',
+    'thang',
+    'long'
+]
+var htmls = names.map2(function(nameFinder) {
+    return `<h2>${nameFinder}</h2>`
+})
+
+console.log(htmls)

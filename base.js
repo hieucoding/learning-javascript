@@ -1,15 +1,16 @@
-console.log(Math.PI) //so pi
+// call back
 
-console.log(Math.round(1.75)) // lam tron
+// la ham function dc chuyen qua doi so
+// khi goi ham khac
 
-console.log(Math.abs(-4)) //tinh gia tri tuyet doi
+//1-la ham
+//2-duoc truyen qua doi so
 
-console.log(Math.ceil(5.000000001)) // lam tron len
+function myCallback (callback) {
+    console.log('callback: ', callback)
+}
+myCallback(1234)
 
-console.log(Math.floor(5.9999999)) // lam tron xuong
-
-console.log(Math.random()) // cho mot so random trong khoang tu 0 den 1
-
-console.log(Math.min(-100, 1 , 10, 1000)) // tim so nho nhat
-
-console.log(Math.max(5, 10, 15, 20)) // tim so lon nhat
+function newFunction(param) {
+    param(12345)
+}

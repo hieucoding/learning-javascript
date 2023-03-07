@@ -1,21 +1,5 @@
-Array.prototype.map2 = function(callback) {
-    var output = [], arrayLenght = this.length
-
-    for (var i = 0; 1 < arrayLenght; ++i) {
-        var result = callback(this[i], i)
-        output.push(result)
-    }
-    return output
-}
-
-var names = [
-    'hoang',
-    'thanh',
-    'thang',
-    'long'
-]
-var htmls = names.map2(function(nameFinder) {
-    return `<h2>${nameFinder}</h2>`
-})
-
-console.log(htmls)
+var number = [1, 10, 500, 1989, 12345]
+var i = Math.min(...number)
+var a = Math.max(...number)
+console.log('so nho nhat: ' + i)
+console.log('so lon nhat:' + a)
